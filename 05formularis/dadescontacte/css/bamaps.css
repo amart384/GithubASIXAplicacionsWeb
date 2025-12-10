@@ -1,0 +1,9 @@
+#map {
+	height: 350px;
+	width: 100%;
+	border: 2px solid gray;
+}
+
+#notapeumapa {
+	font-size: 0.8em;
+}

@@ -1,0 +1,59 @@
+.descripciooculta {
+	display: none;
+}
+
+/* Ajustes para submenús en vertical */
+.dropdown-menu {
+	display: none; /* Por defecto, ocultamos los submenús */
+	background-color: #dce1e6;
+	width: auto;
+}
+.dropdown-menu.show {
+	display: block; /* Mostrar submenú cuando se haga clic */
+}
+
+.nav-item .dropdown-toggle::after {
+	content: ""; /* Flecha indicadora para los menús desplegables */
+}
+
+.llistaetiquetes {
+	display: block;
+ 	width: auto;	
+	background-color: #dce1e6; /* gris clar */		
+	color: #330000; /*gris blauos fosc #35393d*/	
+	padding: 4px 10px 2px 10px;
+	margin: 2px;
+	border-radius: 2px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 22px;
+}
+
+.llistaetiquetes:hover {
+	//background-color: #007BFF;
+}
+
+.etiqueta {
+	display: inline-block;
+	width: auto;
+	background-color: #6c757d;
+	color: white;
+	padding: 6px 12px 6px 12px;
+	margin: 5px;
+	border-radius: 9px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	font-size: 22px;
+}	
+
+.etiqueta:hover {
+	background-color: #f0ad4e;		 
+}
+
+.etiqueta:selected {
+	background-color: #28a745;
+}
+
+.etiquetatriada {
+	background-color: #f0ad4e !important;	
+}

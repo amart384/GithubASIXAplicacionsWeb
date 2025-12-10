@@ -1,0 +1,233 @@
+ body {
+	font-family: Arial, sans-serif;
+	margin: 0px;
+	padding: 2px;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 1vh;
+	font-size: 22px;
+}
+
+#divprivacyterms {
+	display: inline-block;
+	margin-top: 2px;
+	position: relative;
+}
+
+/*
+.container {
+	max-width: 800px;
+	background: white;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}		*/
+
+.titolprincipal {
+	text-align: center;
+	color: DarkBlue;
+	font-size: 32px;
+}
+
+/*camera*/
+#divcamera {
+	margin-top: 2px;
+	text-align: center;
+	position: relative;
+	display: none;
+}
+
+#camera {
+	max-width: 100%;
+	height: auto;
+}
+	
+/*boto de la camera*/
+.capture-roundbutton {
+	position: absolute;
+	bottom: 20%; /* Espacio desde el borde inferior */
+	left: 50%;
+	transform: translateX(-50%); /* Centrar horizontalmente */
+	width: 75px; /* Tamaño del botón */
+	height: 75px; /* Tamaño del botón */
+	background-color: white; /* Color del botón */
+	border: 4px solid lightgray; /* Borde gris claro de 10px */
+	border-radius: 50%; /* Botón redondo */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	font-size: 36px; /* Tamaño del ícono */
+	color: black; /* Color del ícono */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s, transform 0.1s;
+}
+.capture-roundbutton:active {
+	background-color: #e0e0e0; /* Color al pulsar el botón */
+	transform: translateX(-50%) scale(0.95); /* Efecto de presionado */
+}
+.capture-roundbutton:focus {
+	outline: none; /* Eliminar el borde de enfoque */
+}
+
+		
+#divbuttonscaptureimage {
+   display: flex;
+   justify-content: center; /* Centra los elementos horizontalmente */
+   align-items: center; /* Centra los elementos verticalmente 1  */	
+}
+
+#divbuttonscaptureimage-again {
+   /*display: block;*/
+   justify-content: center; /* Centra los elementos horizontalmente */
+   align-items: center; /* Centra los elementos verticalmente 1  */	
+}
+
+#divform {
+	display: hidden;
+	margin-top: 2px;
+	text-align: center;
+	position: relative;
+}		
+
+#divimages {
+	margin-top: 2px;
+	text-align: center;
+	position: relative;
+	display: none;
+}
+
+/*Imatge Capturada*/
+#captured-image-container {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}		
+#captured-image {
+	
+	
+	max-width: 100%;
+	max-height: 100%; 
+	object-fit: contain;
+	height: auto;
+	margin: 0 auto;
+	text-align: center;
+	border: 10px solid white; /* Agrega un borde blanco de 5px */
+	border-radius: 15px; /* Redondea las esquinas */
+	box-shadow: 0 4px 7px rgba(0, 0, 0, 0.5); /* Agrega una sombra suave */
+}		
+.delete-icon {
+	font-size: 30px;          
+	cursor: pointer;
+	background-color: white;
+	border-radius: 50%;
+	padding: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*
+button {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 20px 10px 20px 10px;
+	font-size: 20px;
+}
+*/
+button:disabled {
+  background-color: #ccc; /* Color gris claro */
+  cursor: not-allowed; /* Cambia el cursor a "no permitido" */
+}
+
+.well p{ 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	margin: 0 10px 10px 0;
+	text-align: left;
+	color: rgba(0,0,0,0.8); 
+}
+
+.well {			
+  min-height: 20px;
+  padding: 19px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 4px;
+	 -moz-border-radius: 4px;
+		  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+		  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+		  
+}
+
+/* estils de caixes */
+.divfooter {
+	text-align:left; 
+	padding: 4; 
+	color: #999999
+}
+
+.dadesform {
+	font-size: 20px;
+	text-align: left;
+}
+
+/* Recaptcha */
+.g-recaptcha {		
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	margin: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+	.g-recaptcha {
+		transform: scale(1.1); /* Ajusta la escala según sea necesario */
+	}
+}
+
+/*GPS*/
+/* Estilo personalizado para hacer el checkbox más grande */
+.checkbox-large {
+	width: 1.5em;
+	height: 1.5em;
+	transform: scale(1.5); /* Escala el checkbox al 150% de su tamaño original */
+	margin-right: 0.5em; /* Ajuste de margen si es necesario */
+}
+
+.radio-large {
+	width: 1.1em;
+	height: 1.1em;
+	transform: scale(1.1); 
+	margin: 0.1em;
+}
+
+/* Spinner overlay styles */
+#spinner-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.8);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1050;
+	display: none;
+}
+
+/* Increment spinner size */
+#spinner-overlay .spinner-border {
+	width: 4rem;
+	height: 4rem;
+}
